@@ -1,5 +1,5 @@
 // class Car {
-//     constructor(brand, model, engine, basePrice, getPrice){
+//     constructor (brand, model, engine, basePrice, getPrice){
 //         this.brand = brand;
 //         this.model = model;
 //         this.engine = engine;
@@ -36,3 +36,69 @@
 // sportsCar.getPrice()
 // console.log("Final price: ", sportsCar.basePrice)
 
+
+
+// class BankAccount {
+//     constructor (name, balance = 0){
+//         this.ownerName = name;
+//         this.balance = balance;
+//     }
+//     deposit(amount){
+//         this.balance += amount;
+//     }
+//     withdraw(amount){
+//         this.balance -= amount
+//     }
+// }
+
+// const account = new BankAccount("Jonas");
+
+// account.deposit(1000);
+// account.withdraw(300);
+// console.log(account.balance); // 70
+
+// class Vehicle {
+//     constructor (brand, model){
+//         this.brand = brand;
+//         this.model = model;
+        
+//     }
+//     information (){
+//         return `Brand" ${this.brand}, Model: ${this.model}`;
+//     }
+    
+// }
+
+// class Car extends Vehicle {
+//     constructor (brand, model, engineType){
+//         super();
+//         this.brand = brand;
+//         this.model = model;
+//         this.engineType = engineType;
+
+//         // arba
+//         // super(brand, model)
+//         // this.engineType = engineType;
+//     }
+//     information(){
+//         return `${super.information()}, Engine type: ${this.engineType}`;
+
+//     }
+// }
+
+// let car = new Car('BMW', '8-series', 'Petrol')
+// console.log(car.information ())
+
+// class Bicycle extends Vehicle {
+//     constructor (brand, model, hasEngine){
+//         super(brand, model);
+//         this.hasEngine = hasEngine
+//     }
+//     information(){
+//         return `${super.information()}, Has engine: ${this.hasEngine}`
+//     }
+// }
+
+// let bicycle = new Bicycle('Scott', 'off-road', true)
+
+// console.log(bicycle.information ())
